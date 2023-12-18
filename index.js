@@ -16,6 +16,13 @@ document.getElementById("btn1").onclick = themSoTuNhien;
 console.log(arrSoTuNhien);
 
 // Tính Tổng
+/** Mô hình 3 khối
+ * Input: Dữ liệu mảng cũ, Tính tổng
+ *
+ * Các bước xử lí: Cộng tất cả các số có trong mảng mà người dùng thêm
+ *
+ * Output: Nhấn nút button in kết quả lên giao diện
+ */
 var tong = 0;
 document.getElementById("btn2").onclick = function () {
   for (var i = 0; i < arrSoTuNhien.length; i++) {
@@ -24,14 +31,29 @@ document.getElementById("btn2").onclick = function () {
   document.getElementById("kq2").innerHTML = tong;
 };
 
-// Đếm Số Nguyên Dương
+// Đếm Số Nguyên dương
+/** Mô Hình 3 Khối
+ * Input: Mảng người dùng nhập
+ *
+ * Các bước xử lí: Lấy ra độ dài mảng
+ *
+ * Output: Nhấn nút button in kết quả lên giao diện
+ *
+ */
 document.getElementById("btn3").onclick = function () {
   var doDai = arrSoTuNhien.length;
   document.getElementById("kq3").innerHTML =
     "Có " + doDai + " số nguyên dương trong mảng ";
 };
 
-// Tìm Số Nhỏ Nhất
+// Tìm Số Nhỏ nhất
+/** Mô Hình 3 Khối
+ *  Input: Mảng người dùng nhập
+ * 
+ *  Các bước xử lí: Sắp xếp lại mảng, Lấy ra số đầu tiên
+ * 
+ *  Output: Nhấn button in kết quả lên giao diện
+ */
 document.getElementById("btn4").onclick = function () {
   var arrNewSoTuNhien = arrSoTuNhien.sort(function (a, b) {
     return a - b;
@@ -40,7 +62,16 @@ document.getElementById("btn4").onclick = function () {
   document.getElementById("kq4").innerHTML = soNhoNhat;
 };
 
-// Tìm Số Dương Nhỏ Nhất Trong Mảng
+// Tìm Số Dương Nhỏ Nhất Trong mảng
+/** Mô Hình 3 Khối
+ *  Input: Mảng
+ *  
+ *  Các bước xử lí: - Dùng vòng lặp để lọc ra số dương
+ *                  - Sắp xếp lại
+ *                  - Lấy ra số đầu tiên
+ * 
+ *  Output: Nhấn button in kết quả lên giao diện 
+ */
 var soDuong = [];
 function TimSoDuongNhoNhat() {
   for (i = 0; i < arrSoTuNhien.length; i++) {
@@ -64,6 +95,13 @@ function TimSoDuongNhoNhat() {
 document.getElementById("btn5").onclick = TimSoDuongNhoNhat;
 
 //Tìm Số Chẵn Cuối Cùng Trong Mảng
+/** Mô Hình 3 Khối
+ *    Input: Mảng người dùng nhập 
+ *    
+ *    Các bước xử lí: Dùng vòng lặp để tìm số chẵn
+ *                    Lấy ra số cuối cungf
+ *    Output: Nhấn button in kết quả lên giao diện
+ */
 var soChan = [];
 function TimSoChanCuoiCungTrongMang() {
   for (i = 0; i < arrSoTuNhien.length; i++) {
@@ -82,7 +120,12 @@ function TimSoChanCuoiCungTrongMang() {
 }
 document.getElementById("btn6").onclick = TimSoChanCuoiCungTrongMang;
 
-//Đổi Chỗ 2 Giá Trị Mảng Trong Vị Trí
+//Đổi Chỗ 2 Giá Trị Mảng Trong Vị trí
+/** Mô Hình 3 Khối
+ *  Input: Mảng
+ *  Các bước xử lí: Dùng vòng lăp
+ *  Output: Nhấn button in kết quả lên giao diện
+ */
 function DoiCho2GiaTri() {
   var viTriMot = parseInt(document.getElementById("viTriMot").value);
   var viTriHai = parseInt(document.getElementById("viTriHai").value);
@@ -148,7 +191,7 @@ function SoSanhAmDuong() {
     }
     console.log(arrAm);
   }
-  
+
   if (arrAm.length > arrDuong.length) {
     document.getElementById("kq11").innerHTML = "Số Âm > Số Dương";
   } else if (arrAm.length < arrDuong.length) {
