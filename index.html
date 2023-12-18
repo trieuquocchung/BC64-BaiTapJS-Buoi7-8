@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Lấy Dữ Liệu Mảng -->
+    <div class="container mt-3 mb-3">
+      <!-- Thêm Số Tự nhiên  -->
+      <h2>Thêm Các Số Tự Nhiên</h2>
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soN"
+          aria-describedby="helpId"
+          placeholder="Nhập số n"
+        />
+      </div>
+      <button class="btn btn-success" id="btn1">Thêm số</button>
+      <div class="p-3 text-white bg-success mt-3" id="kq1"></div>
+    </div>
+    <!-- Tính Tổng Các Số Trong Mảng  -->
+    <div class="container mt-3 mb-3">
+      <h2>Tính Tổng Các Số Dương</h2>
+      <button class="btn btn-secondary" id="btn2">Tính Tổng</button>
+      <div class="p-3 mt-3 text-white bg-secondary" id="kq2"></div>
+    </div>
+    <!-- Đếm Số Trong Mảng  -->
+    <div class="container mt-3 mb-3">
+      <h2>Đếm có bao nhiêu số dương trong mảng</h2>
+      <button class="btn btn-primary" id="btn3">Đếm</button>
+      <div class="p-3 mt-3 text-white bg-primary" id="kq3"></div>
+    </div>
+    <!-- Tìm Số Nhỏ Nhất -->
+    <div class="container mt-3 mb-3">
+      <h2>Tìm Số Nhỏ Nhất Trong Mảng</h2>
+      <button class="btn btn-danger" id="btn4">Tìm</button>
+      <div class="p-3 mt-3 text-white bg-danger" id="kq4"></div>
+    </div>
+    <!-- Tìm Số Dương Nhỏ Nhất -->
+    <div class="container mt-3 mb-3">
+      <h2>Tìm Số Dương Nhỏ Nhất Trong Mảng</h2>
+      <button class="btn btn-warning" id="btn5">Tìm</button>
+      <div class="p-3 mt-3 text-white bg-warning" id="kq5"></div>
+    </div>
+    <!-- Tìm Số Chẵn Cuối Cùng Trong Mảng  -->
+    <div class="container mt-3 mb-3">
+      <h2>Tìm Số Chẵn Cuối Cùng Trong Mảng</h2>
+      <button class="btn btn-info" id="btn6">Tìm</button>
+      <div class="p-3 mt-3 text-white bg-info" id="kq6"></div>
+    </div>
+    <!-- Đổi Chỗ 2 Giá Trị Mảng Trong Vị Trí -->
+    <div class="container mt-3 mb-3">
+      <h2>Đổi Chỗ 2 Giá Trị Mảng Trong Vị Trí</h2>
+      <div class="form-group">
+        <input
+          type="number"
+          class="form-control"
+          name=""
+          id="viTriMot"
+          aria-describedby="helpId"
+          placeholder="Nhập số vị trí 1"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          class="form-control"
+          name=""
+          id="viTriHai"
+          aria-describedby="helpId"
+          placeholder="Nhập số vị trí 2"
+        />
+      </div>
+      <button class="btn btn-dark" id="btn7">Đổi</button>
+      <div class="p-3 mt-3 text-white bg-dark" id="kq7"></div>
+    </div>
+    <!-- Sắp Xếp Mảng Theo Thứ Tự Tăng Dần  -->
+    <div class="container mt-3 mb-3">
+      <h2>Sắp Xếp Mảng Theo Vị Trí Tăng Dần</h2>
+      <button class="btn btn-outline-primary" id="btn8">Sắp xếp</button>
+      <div class="p-3 mt-3 alert alert-primary" id="kq8"></div>
+    </div>
+    <!-- Tìm Số Nguyên Tố Đầu Tiên Trong Mảng -->
+    <div class="container mt-3 mb-3">
+      <h2>Tìm Số Nguyên Tố Đầu Tiên Trong Mảng</h2>
+      <button class="btn btn-outline-success" id="btn9">Tìm</button>
+      <div class="p-3 mt-3 alert alert-success" id="kq9"></div>
+    </div>
+    <!-- Đếm Số Nguyên  -->
+    <div class="container mt-3 mb-3">
+      <h2>Đếm Số Nguyên</h2>
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="demSoNguyen"
+          aria-describedby="helpId"
+          placeholder="Nhập số nguyên"
+        />
+      </div>
+      <button class="btn btn-outline-secondary" id="themSoNguyen">
+        Thêm Số
+      </button>
+      <div class="p-3 mt-3 alert alert-secondary" id="arrSoNguyen"></div>
+      <div class="p-3 mt-3 alert alert-secondary" id="kq10"></div>
+    </div>
+    <!-- So Sánh Lượng Số Âm Và Số Dương  -->
+    <div class="container mt-3 mb-3">
+      <h2>So Sánh Lượng Số Âm Và Số Dương</h2>
+      <button class="btn btn-outline-info" id="btn11">So Sánh</button>
+      <div class="p-3 mt-3 alert alert-info" id="kq11"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
